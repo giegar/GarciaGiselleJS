@@ -64,10 +64,6 @@ footer{
     background-color: #79339e7c;
 }
 /*-- STYLE --*/
-.index{
-    background-image: url(./img/fondo_index.png);
-    background-size: cover;
-}
 .principal{
     font-family: 'Great Vibes', cursive;
     font-size: 3.5rem;
@@ -78,7 +74,6 @@ footer{
     display: flex;
     padding: .5rem;
     margin: .5rem;
-
 }
 .ul{
     display: flex;
@@ -301,18 +296,18 @@ footer{
     scroll-snap-align: start;
 }
 .slider1{
-    background-image: url(/img/carrusel/1.png)
+    background-image: url(img/carrusel/1.png)
 }
 .slider2{
-    background-image: url(/img/carrusel/2.png);
+    background-image: url(img/carrusel/2.png);
 }
 .slider3{
-    background-image: url(/img/carrusel/3.png);
+    background-image: url(img/carrusel/3.png);
 }
 
 
 .redes{
-    margin-left: 25rem;
+    margin-left: 22rem;
     display: flex;
     flex-direction: row;
 }
