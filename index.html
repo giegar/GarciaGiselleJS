@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    
+    <!-- FUENTES IMPORTADAS DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,200;0,600;1,200;1,600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Café y Tinta</title>
+</head>
+<body class="grilla">
+    <header>
+            <h1 class="principal">Café y Tinta</h1>
+            <div class="menu">
+                <ul class="ul">
+                    <li class="li">Inicio</li>
+                    <li class="li">Ubicación</li>
+                    <li class="li">Contacto</li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <div class="divCarrusel">
+            <div class="carrusel">
+                <div class="divSlider slider1">
+                </div>
+
+                <div class="divSlider slider2">
+                </div>
+
+                <div class="divSlider slider3">
+                </div>
+            </div>
+        </div>
+
+        <div class="margin">
+            <div>
+                <h2 class="titulo"> Libros disponibles </h2>
+            </div>
+            <div id="contenedorLibros" class="contenedorCards">
+                <!-- Cards desde JS -->
+            </div>
+        </div>
+        
+        <div class="margin">
+            <div class="center">
+                <h3 class="titulo"> ¿No sabes que libro elegir?</h3>
+                <p class="texto">Te recomendamos:</p>
+            </div>    
+            <div id="contenedorRec" class="contRecomendados">
+                <!-- DOM a partir de JSON local y fetch -->
+            </div>
+        </div>
+    </main>
+    <aside class="seccionCarrito">
+        <div>
+            <h3 class="titulo">Carrito de compras</h3>
+        </div>
+        <div id="divCarrito" class="divCarrito" >
+            <!--Mostrar carrito desde JS-->
+        </div>
+        <div class="carritoFooter">
+            <p class="total">Subtotal: $<span id="totalCarrito"></span></p>
+            <div class="divBotonesCarrito">
+                <button class="botonEstilo botonProducto" id="limpiarCarrito"><img src="img/TrashDeleteBin.svg"></button>
+                <button class="botonEstilo botonProducto" id="finalizarCarrito"><img src="img/CheckGoodYes.svg"></button>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <h1 class="principal">Café y Tinta</h1>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/redes/InstagramSocial.svg" alt="Instagram logo" class="logo"></a>
+
+            <a href="https://twitter.com/" target="_blank" alt="Twitter logo"><img src="/img/redes/TwitterSocialTweet.svg" alt="Twitter logo" class="logo"></a>
+
+            <a href="https://www.google.com/maps/place/Plaza+de+Mayo/@-34.6091745,-58.3816118,14.25z/data=!4m6!3m5!1s0x95bccadb57fd1e5f:0xcc737c4eb0a8614b!8m2!3d-34.6083667!4d-58.3722832!16zL20vMDJzYmtj?hl=es" target="_blank"><img src="/img/redes/LocationPin.svg" alt="Maps" class="logo"></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

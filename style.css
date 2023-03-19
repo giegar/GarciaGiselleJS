@@ -1,0 +1,321 @@
+/* 
+----- PALETA DE COLORES -----
+Negro --> #0C0D11
+Gris claro --> #ADACA6
+Morado --> #78339E
+Blanco --> #f5eded
+
+----- TIPOGRAFIAS IMPORTADAS DE GOOGLE FONTS -----
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/*----- Estilo general -----*/
+
+/*-- GRID --*/
+.grilla{
+    display: grid;  
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 13vh auto 20vh;
+    grid-row-gap: 2%;
+    grid-template-areas:
+    "header carrito"
+    "main carrito"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #79339e;
+    }
+main{
+    grid-area: main;
+    height: auto;
+}
+.seccionCarrito{
+    grid-area: carrito;
+    height: 98vh;
+    width: 25%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: #f5eded;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #79339e7c;
+}
+/*-- STYLE --*/
+.index{
+    background-image: url(./img/fondo_index.png);
+    background-size: cover;
+}
+.principal{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color:#0C0D11;
+    margin: 1rem;
+}
+.menu{
+    display: flex;
+    padding: .5rem;
+    margin: .5rem;
+
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+}
+.li{
+    margin:1rem;
+    padding: 0.5rem;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.li:hover{
+    color: white;
+}
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.monserratBold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.botonEstilo{
+    color: white;
+    background-color: #79339e7c;
+    border-width: 0px;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800; 
+}
+.botonEstilo:hover{
+    background-color: #79339e;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.swalInput{
+    color: #0C0D11;
+    background-color:#f5eded;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.margin{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+/*----- Cards de productos -----*/
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ADACA6;
+    border-radius: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    text-align:center;
+    width:17em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.imgcards{
+    width: 50%;
+    margin-right: 0.5rem;
+    border-radius: 1rem;
+}
+
+.alinearInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.botonProducto{
+    font-size: 0.7rem;
+    width: 8rem;
+    padding: 0.6rem;
+    margin: 0.2rem;
+}
+/*----- Carrito y sus cards -----*/
+.divBotonesCarrito{
+    display: flex;
+    flex-direction: row;
+}
+.divCarrito{
+    overflow: auto;
+}
+.cardsCarrito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ADACA6;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding: 0.6rem;
+    margin: 0.3rem;
+    margin-bottom: 0.6rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgcarrito{
+    height: 8em;
+    border-radius: 0.5rem;
+}
+.alinearContenido{
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.alinearBotones{
+    flex-direction: row;
+}
+.total{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+}
+.botonCarrito{
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+.carritoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    background-color: #ADACA6;
+}
+/*----- Recomendados -----*/
+.center{
+    text-align: center;
+    justify-content: center;
+}
+.texto{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contRecomendados{
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.sinopsis{ 
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    line-height: 2em;
+    font-size:0.9rem;
+    background: #79339e;
+    transition: opacity .4s linear;  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 1rem;
+}
+.sinopsis:hover{
+    opacity: .8; 
+}
+.cardsRec{
+    height: 20.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.imgrec{
+    height:20rem;
+    border:#79339e 5px solid;
+    border-radius: 1rem;
+}
+
+/*----- CARRUSEL -----*/
+.divCarrusel {
+    height: 30rem;
+    width: 64rem;
+    margin-left: 0;
+    overflow: hidden;
+}
+.carrusel {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: auto;
+}
+.divSlider {
+    height: 30rem;
+    min-width: 64rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.slider1{
+    background-image: url(/img/carrusel/1.png)
+}
+.slider2{
+    background-image: url(/img/carrusel/2.png);
+}
+.slider3{
+    background-image: url(/img/carrusel/3.png);
+}
+
+
+.redes{
+    margin-left: 25rem;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin: 1rem;
+}
